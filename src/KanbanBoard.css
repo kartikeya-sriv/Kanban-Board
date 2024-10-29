@@ -1,0 +1,85 @@
+/* KanbanBoard.css */
+
+/* KanbanBoardTitle.css */
+
+.kanban-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure full viewport height */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kanban-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #282c35;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #282c35; /* Dark background color */
+  color: #fff; /* Text color */
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #3b3e4f; /* Column background color */
+  border: 1px solid #2e3140;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.kanban-column:hover {
+  transform: scale(1.05);
+  background-color: #454861; /* Hover color */
+}
+
+.kanban-ticket {
+  background-color: #454861; /* Ticket background color */
+  border: 1px solid #363943;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.kanban-ticket:hover {
+  transform: scale(1.02);
+  background-color: #50546b; /* Hover color for tickets */
+}
+
+.kanban-ticket h3 {
+  margin: 0;
+  color: #fff; /* Ticket title color */
+}
+
+.kanban-ticket p {
+  margin: 5px 0;
+  color: #ccc; /* Ticket text color */
+}
+
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kanban-column {
+    width: 100%;
+  }
+}

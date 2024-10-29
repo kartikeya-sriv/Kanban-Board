@@ -1,0 +1,39 @@
+/* SortingOptions.css */
+
+.sorting-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px; /* Add padding to the entire component */
+  border: 1px solid white; /* Add a border for a visually appealing container */
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: lightslategray;
+  color: ghostwhite;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 878px) {
+  .sorting-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  select {
+    max-width: 100%;
+  }
+}

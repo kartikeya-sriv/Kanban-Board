@@ -1,0 +1,44 @@
+/* GroupingOptions.css */
+
+.grouping-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px; /* Add padding to the entire component */
+  border: 1px solid white; /* Add a border for a visually appealing container */
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: gray;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 868px) {
+  .grouping-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    margin-bottom: 30px;
+  }
+
+  select {
+    max-width: 90%;
+  }
+}
